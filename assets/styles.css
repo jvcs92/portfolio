@@ -38,6 +38,7 @@ a{color:inherit}
 .nav a.contact::before{background:var(--pink)}
 .nav a:hover{background:rgba(255,255,255,.1)}
 .nav a[aria-current=page]{background:#fff;color:var(--dark)}
+.nav a.skl[aria-current=page]::before{background:var(--dark)}
 .nav a:focus-visible,.mline:focus-visible,.xfer a:focus-visible,.foot a:focus-visible,.contacts a:focus-visible{outline:3px solid #6a4cff;outline-offset:3px}
 
 /* hero */
