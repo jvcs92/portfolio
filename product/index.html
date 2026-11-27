@@ -269,6 +269,34 @@
           </div>
         </li>
 
+        <li class="stop" id="ai-ops-manager">
+          <h2>AI Ops Manager: the team works on the issues worth the most</h2>
+          <p class="where">Bird · Iberia &amp; France · built by me with AI-assisted development</p>
+          <div class="case">
+            <div>
+              <h3>The problem</h3>
+              <p>The operations team spent hours pulling numbers from dashboards and spreadsheets, and often worked on the wrong things: whatever looked urgent, not what moved revenue most.</p>
+              <h3>What I built</h3>
+              <div class="stage"><p><strong>A daily briefing in Slack.</strong> Every day the agent reads the operating and financial metrics, compares periods, and posts the top 10 issues to solve, ranked by what they're worth.</p></div>
+              <div class="stage"><p><strong>A chatbot anyone can ask.</strong> In Slack, anyone on the team can ask in plain language, like "what was revenue last Black Friday?" or "did it rain last Christmas?", and get the answer without opening a dashboard.</p></div>
+              <div class="stage"><p><strong>The weekly business review, built automatically.</strong> Every week it builds the full regional review: KPIs, fleet performance, demand forecast, trends and cost of sales, with the analysis written for each country.</p></div>
+              <figure class="shot">
+                <a href="../demo/ai-ops-manager.html"><img src="../assets/img/ops-demo.jpg" alt="Weekly business review built by the AI Ops Manager, shown with a fictional company and synthetic data" width="1300" height="640"></a>
+                <figcaption><a href="../demo/ai-ops-manager.html"><strong>Explore the weekly review it builds &rarr;</strong></a> A demo with a fictional company and synthetic data: 8 countries, 28 cities, 5 tabs. Not Bird's figures.</figcaption>
+              </figure>
+            </div>
+            <div class="result">
+              <h3>Result</h3>
+              <ul>
+                <li>Top issues ranked by <strong>ROI</strong> (return on investment) every day, so the team starts with what matters most</li>
+                <li>The weekly business review is <strong>built automatically</strong> every week</li>
+                <li>Questions on revenue, weather and events answered <strong>in Slack</strong>, without opening a dashboard</li>
+              </ul>
+              <ul class="tags" aria-label="Built with"><li>Python</li><li>Gemini API</li><li>Slack bot (OAuth)</li><li>GitHub Actions</li><li>Metabase</li><li>Apps Script</li></ul>
+            </div>
+          </div>
+        </li>
+
         <li class="stop" id="agents">
           <h2>AI agents for the operations team</h2>
           <p class="where">Bird · Iberia &amp; France, some used globally</p>
@@ -277,7 +305,7 @@
               <h3>What I built</h3>
               <ul>
                 <li><strong>Event intelligence agent.</strong> The team lost hours finding events and measuring them. The agent finds them, predicts expected rides and ROI (return on investment), and recommends fleet size and moves per event, flagging low-margin events as high risk. Python, Gemini API, GitHub automation and a Slack bot.</li>
-                <li><strong>AI Ops Manager.</strong> Reads daily operating and financial metrics, compares periods, spots trends and builds the regional weekly business review, ranked by ROI so the team works on the issues that matter most. A Slack chatbot answers questions like "last week's revenue in Porto" without opening a dashboard. <a href="../demo/ai-ops-manager.html"><strong>Explore the weekly review it builds &rarr;</strong></a> (demo with a fictional company and synthetic data: 8 countries, 28 cities, 5 tabs)</li>
+                <li><strong>AI Ops Manager.</strong> Daily top-10 issues and a Slack chatbot over our data, plus the weekly business review built automatically. <a href="#ai-ops-manager">See the case above</a>.</li>
                 <li><strong>Data agent.</strong> Turns plain-language questions into SQL queries, trained on Bird's schemas and key revenue queries. <a href="#data-agent">See the case above</a>.</li>
               </ul>
             </div>
@@ -286,8 +314,7 @@
               <ul>
                 <li>Event agent used in <strong>200+ cities</strong></li>
                 <li><strong>30–150% more rides</strong> on qualifying event days</li>
-                <li>Weekly business review built automatically every week</li>
-              </ul>
+                              </ul>
               <ul class="tags" aria-label="Built with"><li>Python</li><li>Gemini API</li><li>Slack bot (OAuth)</li><li>GitHub</li><li>Metabase</li><li>Apps Script</li></ul>
             </div>
           </div>
