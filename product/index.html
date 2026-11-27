@@ -251,7 +251,7 @@
               <h3>The problem</h3>
               <p>Bird ran its data on Metabase, and a small data team spent most of its time keeping the database running. Ops, Growth and BizOps had to ask them for every new query and often waited more than 2 weeks, so decisions waited too. The most resourceful people pasted two existing queries into an LLM and asked it to merge them. That worked sometimes, but it cost them hours and nobody could be sure the numbers were right.</p>
               <h3>What I did</h3>
-              <div class="stage"><p><strong>Gave the agent the whole map.</strong> Exported every schema, table and column and loaded them into an AI agent built on Gemini, the LLM platform Bird already used.</p></div>
+              <div class="stage"><p><strong>Gave the agent the whole map.</strong> Exported every schema, table and column and loaded them into an AI agent built on Gemini. I chose it on purpose: it was the LLM platform Bird already used, and under Bird's setup our conversations were not used to train Google's models, so our schemas and tables stayed private.</p></div>
               <div class="stage"><p><strong>Trained it on the queries that can't be wrong.</strong> Spent 1 to 2 weeks feeding it the data team's most important queries, above all revenue queries with many variables, and checked the training with the data team lead.</p></div>
               <div class="stage"><p><strong>Shipped it with a safety net.</strong> Released it company-wide as the data team agent: anyone asks in plain language ("revenue per market and utilisation by hour and day") and gets the query straight away. Every user was asked to compare new queries against the data team's existing dashboards before relying on them.</p></div>
             </div>
