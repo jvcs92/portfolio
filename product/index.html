@@ -243,6 +243,31 @@
           </div>
         </li>
 
+        <li class="stop" id="data-agent">
+          <h2>Data agent: from a 2-week queue to asking in plain language</h2>
+          <p class="where">Bird · used across the company · built by me, validated with the data team lead</p>
+          <div class="case">
+            <div>
+              <h3>The problem</h3>
+              <p>Bird ran its data on Metabase, and a small data team spent most of its time keeping the database running. Ops, Growth and BizOps had to ask them for every new query and often waited more than 2 weeks, so decisions waited too. The most resourceful people pasted two existing queries into an LLM and asked it to merge them. That worked sometimes, but it cost them hours and nobody could be sure the numbers were right.</p>
+              <h3>What I did</h3>
+              <div class="stage"><p><strong>Gave the agent the whole map.</strong> Exported every schema, table and column and loaded them into an AI agent built on Gemini, the LLM platform Bird already used.</p></div>
+              <div class="stage"><p><strong>Trained it on the queries that can't be wrong.</strong> Spent 1 to 2 weeks feeding it the data team's most important queries, above all revenue queries with many variables, and checked the training with the data team lead.</p></div>
+              <div class="stage"><p><strong>Shipped it with a safety net.</strong> Released it company-wide as the data team agent: anyone asks in plain language ("revenue per market and utilisation by hour and day") and gets the query straight away. Every user was asked to compare new queries against the data team's existing dashboards before relying on them.</p></div>
+            </div>
+            <div class="result">
+              <h3>Result</h3>
+              <ul>
+                <li>Requests to the data team <strong>−90%</strong>, measured as monthly tickets before and after launch</li>
+                <li>For Operations, <strong>~99%</strong> of query needs solved by the agent</li>
+                <li>Requests that still reached the data team: <strong>2 weeks → 1 day</strong> (simple) or <strong>3 days</strong> (complex)</li>
+                <li>Used by teams <strong>across Bird</strong>; the data team got time back for senior leadership, with no need to hire</li>
+              </ul>
+              <ul class="tags" aria-label="Built with"><li>Gemini</li><li>Text-to-SQL</li><li>Metabase</li><li>Data validation</li></ul>
+            </div>
+          </div>
+        </li>
+
         <li class="stop" id="agents">
           <h2>AI agents for the operations team</h2>
           <p class="where">Bird · Iberia &amp; France, some used globally</p>
@@ -252,7 +277,7 @@
               <ul>
                 <li><strong>Event intelligence agent.</strong> The team lost hours finding events and measuring them. The agent finds them, predicts expected rides and ROI (return on investment), and recommends fleet size and moves per event, flagging low-margin events as high risk. Python, Gemini API, GitHub automation and a Slack bot.</li>
                 <li><strong>AI Ops Manager.</strong> Reads daily operating and financial metrics, compares periods, spots trends and builds the regional weekly business review, ranked by ROI so the team works on the issues that matter most. A Slack chatbot answers questions like "last week's revenue in Porto" without opening a dashboard.</li>
-                <li><strong>Data agent.</strong> Knows Bird's data schemas, so anyone on the team can write queries in plain language.</li>
+                <li><strong>Data agent.</strong> Turns plain-language questions into SQL queries, trained on Bird's schemas and key revenue queries. <a href="#data-agent">See the case above</a>.</li>
               </ul>
             </div>
             <div class="result">
