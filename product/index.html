@@ -253,7 +253,8 @@
               <h3>What I did</h3>
               <div class="stage"><p><strong>Gave the agent the whole map.</strong> Exported every schema, table and column and loaded them into an AI agent built on Gemini. I chose it on purpose: it was the LLM platform Bird already used, and under Bird's setup our conversations were not used to train Google's models, so our schemas and tables stayed private.</p></div>
               <div class="stage"><p><strong>Trained it on the queries that can't be wrong.</strong> Spent 1 to 2 weeks feeding it the data team's most important queries, above all revenue queries with many variables, and checked the training with the data team lead.</p></div>
-              <div class="stage"><p><strong>Shipped it with a safety net.</strong> Released it company-wide as the data team agent: anyone asks in plain language ("revenue per market and utilisation by hour and day") and gets the query straight away. Every user was asked to compare new queries against the data team's existing dashboards before relying on them.</p></div>
+              <div class="stage"><p><strong>Shipped it with a safety net.</strong> Released it company-wide as a shared Gemini Gem that anyone could copy to their own Gemini account. People ask in plain language ("revenue per market and utilisation by hour and day") and get the query straight away. Every user was asked to compare new queries against the data team's existing dashboards before relying on them.</p></div>
+              <div class="stage"><p><strong>Piloted it in Slack.</strong> Later I put the agent in a company-wide Slack channel through a Slack bot: each request got its own thread with a ready-to-paste Metabase query, and when someone asked for something already requested, the agent pointed to the earlier query and asked whether to reuse it or generate a new one. The pilot ran only briefly, so I have no usage data for it.</p></div>
             </div>
             <div class="result">
               <h3>Result</h3>
@@ -263,7 +264,7 @@
                 <li>Requests that still reached the data team: <strong>2 weeks → 1 day</strong> (simple) or <strong>3 days</strong> (complex)</li>
                 <li>Used by teams <strong>across Bird</strong>; the data team got time back for senior leadership, with no need to hire</li>
               </ul>
-              <ul class="tags" aria-label="Built with"><li>Gemini</li><li>Text-to-SQL</li><li>Metabase</li><li>Data validation</li></ul>
+              <ul class="tags" aria-label="Built with"><li>Gemini Gem</li><li>Text-to-SQL</li><li>Slack bot</li><li>Metabase</li><li>Data validation</li></ul>
             </div>
           </div>
         </li>
